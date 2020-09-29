@@ -266,25 +266,26 @@ export default {
         customBackend: {
           "localhost:25500 本地版": "http://localhost:25500/sub?",
           "sub-beta.now.sh (自动编译最新版本后端-测试）": "https://sub-beta.now.sh/sub?",
-          "subcon.dlj.tf(subconverter作者提供)":
+          "subcon.dlj.tf(subconverter作者提供-稳定)":
             "https://subcon.dlj.tf/sub?",
-          "api.dler.io(sub作者&lhie1提供-稳定)": "https://api.dler.io/sub?",
-          "api.wcc.best(sub-web作者提供-稳定)": "https://api.wcc.best/sub?"
+          "我的后端": "https://sub.nxnow.cf/sub?",
+          "api.wcc.best(sub-web作者提供-稳定)": "https://api.wcc.best/sub?",
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
           { value: "https://sub-beta.now.sh/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
-          { value: "https://api.dler.io/sub?" },
-          { value: "https://api.wcc.best/sub?" }
+          { value: "https://sub.nxnow.cf/sub?" },
+          { value: "https://api.wcc.best/sub?" },
         ],
         remoteConfig: [
-          {
-            label: "默认",
+	{
+            label: "默认私有配置",
             options: [
               {
-                label: "不选，由接口提供方提供",
-                value: ""
+                label: "MyOutPref",
+                value:
+                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outpref.ini"
               }
             ]
           },
