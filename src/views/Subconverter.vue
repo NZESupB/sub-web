@@ -274,7 +274,7 @@ export default {
         ],
         remoteConfig: [
 	{
-          {
+
             label: "默认私有配置",
             options: [
               {
