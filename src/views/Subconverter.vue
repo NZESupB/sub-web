@@ -291,7 +291,7 @@ export default {
                    "https://raw.githubusercontent.com/SimonGino/subconverter-Gino/master/outpref.ini"
 	      }
             ]
-          },
+          }
         ]
       },
       form: {
