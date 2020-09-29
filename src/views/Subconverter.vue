@@ -281,14 +281,14 @@ export default {
             label: "默认私有配置",
             options: [
               {
-                label: "MyOutPref",
+                label: "DefaultNXOutPref",
                 value:
                   "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outpref.ini"
               },
 	      {
 	      	 label: "SimonGino",
                  value:
-                  "https://raw.githubusercontent.com/SimonGino/subconverter-Gino/master/outpref.ini"
+                   "https://raw.githubusercontent.com/SimonGino/subconverter-Gino/master/outpref.ini"
 	      }
             ]
           },
