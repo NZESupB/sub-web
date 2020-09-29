@@ -289,7 +289,7 @@ export default {
 	      	 label: "SimonGino",
                  value:
                   "https://raw.githubusercontent.com/SimonGino/subconverter-Gino/master/outpref.ini"
-	      },
+	      }
             ]
           },
         ]
