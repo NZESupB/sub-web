@@ -274,6 +274,7 @@ export default {
         ],
         remoteConfig: [
 	{
+          {
             label: "默认私有配置",
             options: [
               {
@@ -281,11 +282,11 @@ export default {
                 value:
                   "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outpref.ini"
               },
-	      {
-	      	 label: "SimonGino",
-                 value:
-                   "https://raw.githubusercontent.com/SimonGino/subconverter-Gino/master/outpref.ini"
-	      }
+              {
+                label: "SimonGino",
+                value:
+                  "https://raw.githubusercontent.com/SimonGino/subconverter-Gino/master/outpref.ini"
+              }
             ]
           }
         ]
