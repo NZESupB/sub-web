@@ -264,15 +264,11 @@ export default {
           v2ray: "v2ray"
         },
         customBackend: {
-          "localhost:25500 本地版": "http://localhost:25500/sub?",
-          "sub-beta.now.sh (自动编译最新版本后端-测试）": "https://sub-beta.now.sh/sub?",
           "subcon.dlj.tf(subconverter作者提供-稳定)":
             "https://subcon.dlj.tf/sub?",
           "我的后端": "https://sub.nxnow.cf/sub?",
         },
         backendOptions: [
-          { value: "http://localhost:25500/sub?" },
-          { value: "https://sub-beta.now.sh/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://sub.nxnow.cf/sub?" },
         ],
