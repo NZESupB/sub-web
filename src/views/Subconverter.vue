@@ -264,10 +264,10 @@ export default {
           v2ray: "v2ray"
         },
         customBackend: {
-          "subcon.dlj.tf(subconverter作者提供-稳定)":
+          "subcon.dlj.tf(subconverter作者)":
             "https://subcon.dlj.tf/sub?",
-          "我的后端": "https://sub.nxnow.cf/sub?",
-          "TOM搞的随缘失联API": "https://b.miucloud.xyz/sub?",
+          "NXWow的后端": "https://sub.nxnow.cf/sub?",
+          "TOM的随缘失联API": "https://b.miucloud.xyz/sub?",
 	},
         backendOptions: [
           { value: "https://subcon.dlj.tf/sub?" },
@@ -277,7 +277,7 @@ export default {
         remoteConfig: [
 	{
 
-            label: "默认私有配置",
+            label: "个人配置",
             options: [
               {
                 label: "DefaultNXOutPref",
@@ -301,17 +301,13 @@ export default {
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
-        emoji: true,
         nodeList: false,
         extraset: false,
         sort: false,
-        udp: false,
         tfo: false,
         scv: false,
         fdn: false,
         appendType: false,
-        insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url
-        new_name: true, // 是否使用 Clash 新字段
 
         // tpl 定制功能
         tpl: {
