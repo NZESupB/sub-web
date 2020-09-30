@@ -267,12 +267,12 @@ export default {
           "subcon.dlj.tf(subconverter作者提供-稳定)":
             "https://subcon.dlj.tf/sub?",
           "我的后端": "https://sub.nxnow.cf/sub?",
-	  "TOM搞的随缘失联API": "https://b.miucloud.xyz/sub?",
-        },
+          "TOM搞的随缘失联API": "https://b.miucloud.xyz/sub?",
+	},
         backendOptions: [
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://sub.nxnow.cf/sub?" },
-	  { value: "https://b.miucloud.xyz/sub?" },
+          { value: "https://b.miucloud.xyz/sub?" },
         ],
         remoteConfig: [
 	{
