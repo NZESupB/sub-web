@@ -287,7 +287,7 @@ export default {
               {
                 label: "SimonGino",
                 value:
-                  "https://raw.githubusercontent.com/SimonGino/subconverter-Gino/master/outpref.ini"
+                  "https://raw.githubusercontent.com/SimonGino/SubConver-Clash-Profile/master/outpref.ini"
               }
             ]
           }
