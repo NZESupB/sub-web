@@ -288,6 +288,11 @@ export default {
                 label: "SimonGino",
                 value:
                   "https://raw.githubusercontent.com/SimonGino/SubConver-Clash-Profile/master/outpref.ini"
+              },
+              {
+                label: "LaJiHY的蛇皮配置",
+                value:
+                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/ljhy.ini"
               }
             ]
           }
