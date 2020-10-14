@@ -263,7 +263,7 @@ export default {
           ssr: "ssr",
           ssd: "ssd",
           v2ray: "v2ray",
-	  Trojan: "trojan"
+          Trojan: "trojan"
         },
         customBackend: {
           "subcon.dlj.tf(subconverter作者)":
