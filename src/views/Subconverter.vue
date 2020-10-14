@@ -247,8 +247,8 @@ export default {
 
       options: {
         clientTypes: {
-          "Clash新参数": "clash&new_name=true",
-          "ClashR新参数": "clashr&new_name=true",
+          //"Clash新参数": "clash&new_name=true",
+          //"ClashR新参数": "clashr&new_name=true",
           Clash: "clash",
           ClashR: "clashr",
           Surge2: "surge&ver=2",
@@ -258,10 +258,13 @@ export default {
           QuantumultX: "quanx",
           Surfboard: "surfboard",
           Loon: "loon",
+	  Mellow: "mellow",
           ss: "ss",
+	  ss官方安卓订阅: "sssub"
           ssr: "ssr",
           ssd: "ssd",
-          v2ray: "v2ray"
+          v2ray: "v2ray",
+	  Trojan: "trojan"
         },
         customBackend: {
           "subcon.dlj.tf(subconverter作者)":
@@ -290,7 +293,7 @@ export default {
                   "https://raw.githubusercontent.com/SimonGino/SubConver-Clash-Profile/master/outpref.ini"
               },
               {
-                label: "辣鸡HY的蛇皮配置",
+                label: "神仙HY的套娃配置",
                 value:
                   "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/ljhy.ini"
               }
