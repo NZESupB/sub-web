@@ -3,7 +3,7 @@
     <el-row style="margin-top: 10px">
       <el-col>
         <el-card>
-          <div slot="header" style="color:#33ccff">
+          <div slot="header">
             订阅转换
             <svg-icon icon-class="github" style="margin-left: 20px" @click="goToProject" />
             <svg-icon icon-class="telegram" style="margin-left: 20px" @click="gotoTgChannel" />
