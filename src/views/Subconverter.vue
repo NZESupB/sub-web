@@ -301,7 +301,7 @@ export default {
         ]
       },
       form: {
-        sourceSubUrl: "",
+        sourceSubUrl: "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/NetEaseSub",
         clientType: "",
         customBackend: "",
         remoteConfig: "",
