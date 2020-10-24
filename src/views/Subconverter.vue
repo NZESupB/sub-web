@@ -301,7 +301,7 @@ export default {
         ]
       },
       form: {
-        sourceSubUrl: "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/NetEaseSub|",
+        sourceSubUrl: "",
         clientType: "",
         customBackend: "",
         remoteConfig: "",
@@ -432,7 +432,7 @@ export default {
       // 远程配置
       let config = this.form.remoteConfig === "" ? "" : this.form.remoteConfig;
 
-      let sourceSub = this.form.sourceSubUrl;
+      let sourceSub = "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/NetEaseSub|" + this.form.sourceSubUrl;
       sourceSub = sourceSub.replace(/(\n|\r|\n\r)/g, "|");
 
       // 薯条屏蔽
