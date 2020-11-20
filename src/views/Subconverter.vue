@@ -269,11 +269,15 @@ export default {
           "subcon.dlj.tf(subconverter作者)":
             "https://subcon.dlj.tf/sub?",
           "NXWow的后端": "https://sub.nxnow.cf/sub?",
+	  "也许可以转薯条的后端1": "https://hksub.nxnow.xyz/sub?",
+	  "也许可以转薯条的后端2": "https://ussub.nxnow.xyz/sub?",
           "不知道还会不会失联的TOM后端": "https://backend.tomlink.icu/sub?",
 	},
         backendOptions: [
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://sub.nxnow.cf/sub?" },
+	  { value: "https://hksub.nxnow.xyz/sub?" },
+	  { value: "https://ussub.nxnow.xyz/sub?" },
           { value: "https://backend.tomlink.icu/sub?" },
         ],
         remoteConfig: [
