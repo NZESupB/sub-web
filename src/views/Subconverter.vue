@@ -296,7 +296,7 @@ export default {
               {
                 label: "QxPref",
                 value:
-                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/QXoutpref.ini.ini"
+                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/QXoutpref.ini"
               },
               {
                 label: "SimonGino",
