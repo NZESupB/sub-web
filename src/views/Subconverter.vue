@@ -266,27 +266,37 @@ export default {
           Trojan: "trojan"
         },
         customBackend: {
-          "subcon.dlj.tf(subconverter作者)":
-            "https://subcon.dlj.tf/sub?",
           "NXWow的后端": "https://sub.nxnow.cf/sub?",
           "也许可以转薯条的后端1": "https://hksub.nxnow.xyz/sub?",
-          "不知道还会不会失联的TOM后端": "https://backend.tomlink.icu/sub?",
+          "品云和薯条PY的后端1": "https://sub.id9.cc/sub?",
+          "品云和薯条PY的后端2": "https://sub.sub.cm/sub?",
+          "品云和薯条PY的后端3": "https://sub.lpy.pw/sub?",
 	},
         backendOptions: [
-          { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://sub.nxnow.cf/sub?" },
           { value: "https://hksub.nxnow.xyz/sub?" },
-          { value: "https://backend.tomlink.icu/sub?" },
+          { value: "https://sub.id9.cc/sub?" },
+          { value: "https://sub.sub.cm/sub?" },
+          { value: "https://sub.lpy.pw/sub?" },
         ],
         remoteConfig: [
 	{
-
             label: "个人配置",
             options: [
               {
                 label: "DefaultNXOutPref",
                 value:
                   "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outpref.ini"
+              },
+              {
+                label: "ProviderPref",
+                value:
+                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outprovide.ini"
+              },
+              {
+                label: "QxPref",
+                value:
+                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/QXoutpref.ini.ini"
               },
               {
                 label: "SimonGino",
