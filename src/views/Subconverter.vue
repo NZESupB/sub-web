@@ -255,7 +255,7 @@ export default {
           ssr: "ssr",
           ssd: "ssd",
           v2ray: "v2ray",
-          Trojan: "trojan"
+          Trojan: "trojan",
           ClashR: "clashr",
           Surge2: "surge&ver=2",
           Surge3: "surge&ver=3",
