@@ -246,16 +246,8 @@ export default {
 
       options: {
         clientTypes: {
-          //"Clash新参数": "clash&new_name=true",
-          //"ClashR新参数": "clashr&new_name=true",
           Clash: "clash",
-          ClashR: "clashr",
-          Surge2: "surge&ver=2",
-          Surge3: "surge&ver=3",
-          Surge4: "surge&ver=4",
-          Quantumult: "quan",
           QuantumultX: "quanx",
-          Surfboard: "surfboard",
           Loon: "loon",
           Mellow: "mellow",
           ss: "ss",
@@ -264,6 +256,12 @@ export default {
           ssd: "ssd",
           v2ray: "v2ray",
           Trojan: "trojan"
+          ClashR: "clashr",
+          Surge2: "surge&ver=2",
+          Surge3: "surge&ver=3",
+          Surge4: "surge&ver=4",
+          Quantumult: "quan",
+          Surfboard: "surfboard",
         },
         customBackend: {
           "NXWow的后端": "https://sub.nxnow.cf/sub?",
@@ -294,11 +292,6 @@ export default {
                   "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outprovide.ini"
               },
               {
-                label: "QxPref",
-                value:
-                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/QXoutpref.ini"
-              },
-              {
                 label: "SimonGino",
                 value:
                   "https://raw.githubusercontent.com/SimonGino/SubConver-Clash-Profile/master/outpref.ini"
@@ -327,6 +320,7 @@ export default {
         scv: false,
         fdn: false,
         appendType: false,
+	insert: false,
 
         // tpl 定制功能
         tpl: {
@@ -444,7 +438,7 @@ export default {
       // 远程配置
       let config = this.form.remoteConfig === "" ? "" : this.form.remoteConfig;
 
-      let sourceSub = "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/NetEaseSub|" + this.form.sourceSubUrl;
+      let sourceSub = this.form.sourceSubUrl;
       sourceSub = sourceSub.replace(/(\n|\r|\n\r)/g, "|");
 
       // 薯条屏蔽
