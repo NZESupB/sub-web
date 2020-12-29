@@ -248,6 +248,8 @@ export default {
         clientTypes: {
           Clash: "clash",
           QuantumultX: "quanx",
+          ClashProvider: "nxclash",
+          QuantXProvider: "nxqx",
           Loon: "loon",
           Mellow: "mellow",
           ss: "ss",
