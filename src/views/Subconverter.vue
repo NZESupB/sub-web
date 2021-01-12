@@ -289,6 +289,11 @@ export default {
                   "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outpref.ini"
               },
               {
+                label: "auto",
+                value:
+                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/auto.ini"
+              },
+              {
                 label: "ProviderPref",
                 value:
                   "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outprovide.ini"
