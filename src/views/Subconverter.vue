@@ -10,7 +10,7 @@
             <div style="display: inline-block; position:absolute; right: 20px">{{ backendVersion }}</div>
           </div>
           <el-container>
-            <el-form :model="form" label-width="120px" label-position="left" style="width: 100%">
+            <el-form :model="form" label-width="80px" label-position="left" style="width: 100%">
               <el-form-item label="模式设置:">
                 <el-radio v-model="advanced" label="1">基础模式</el-radio>
                 <el-radio v-model="advanced" label="2">进阶模式</el-radio>
@@ -84,15 +84,17 @@
                 <el-form-item label-width="0px">
                   <el-row type="flex">
                     <el-col>
-                      <el-checkbox v-model="form.emoji" label="Emoji" border></el-checkbox>
                       <el-checkbox v-model="form.nodeList" label="输出为 Node List" border></el-checkbox>
                     </el-col>
                     <el-popover placement="bottom" v-model="form.extraset">
                       <el-row>
+                        <el-checkbox v-model="form.emoji" label="Emoji"></el-checkbox>
+                      </el-row>
+                      <el-row>
                         <el-checkbox v-model="form.new_name" label="Clash New Field"></el-checkbox>
                       </el-row>
                       <el-row>
-                        <el-checkbox v-model="form.udp" label="启用 UDP"></el-checkbox>
+                        <el-checkbox v-model="form.udp" @change="needUdp = true" label="启用 UDP"></el-checkbox>
                       </el-row>
                       <el-row>
                         <el-checkbox v-model="form.appendType" label="节点类型"></el-checkbox>
@@ -105,7 +107,7 @@
                       </el-row>
                       <el-button slot="reference">更多选项</el-button>
                     </el-popover>
-                    <el-popover placement="bottom" style="margin-left: 20px">
+                    <el-popover placement="bottom" style="margin-left: 10px">
                       <el-row>
                         <el-checkbox v-model="form.tpl.surge.doh" label="Surge.DoH"></el-checkbox>
                       </el-row>
@@ -138,7 +140,7 @@
                   >复制</el-button>
                 </el-input>
               </el-form-item>
-              <el-form-item label="订阅短链接:">
+              <el-form-item label="订阅短链:">
                 <el-input class="copy-content" disabled v-model="curtomShortSubUrl">
                   <el-button
                     slot="append"
@@ -264,6 +266,14 @@ export default {
           Surge4: "surge&ver=4",
           Quantumult: "quan",
           Surfboard: "surfboard",
+          Loon: "loon",
+          SSAndroid: "sssub",
+          V2Ray: "v2ray",
+          ss: "ss",
+          ssr: "ssr",
+          ssd: "ssd",
+          ClashR: "clashr",
+          Surge2: "surge&ver=2",
         },
         customBackend: {
           "NXWow的后端": "https://sub.nxnow.cf/sub?",
@@ -280,7 +290,7 @@ export default {
           { value: "https://sub.lpy.pw/sub?" },
         ],
         remoteConfig: [
-	{
+         {
             label: "个人配置",
             options: [
               {
@@ -348,7 +358,9 @@ export default {
       uploadConfig: "",
       uploadPassword: "",
       myBot: tgBotLink,
-      sampleConfig: remoteConfigSample
+      sampleConfig: remoteConfigSample,
+
+      needUdp: false, // 是否需要添加 udp 参数
     };
 
     // window.console.log(data.options.remoteConfig);
@@ -496,8 +508,6 @@ export default {
           this.form.emoji.toString() +
           "&list=" +
           this.form.nodeList.toString() +
-          "&udp=" +
-          this.form.udp.toString() +
           "&tfo=" +
           this.form.tfo.toString() +
           "&scv=" +
@@ -506,6 +516,10 @@ export default {
           this.form.fdn.toString() +
           "&sort=" +
           this.form.sort.toString();
+
+        if (this.needUdp) {
+          this.customSubUrl += "&udp=" + this.form.udp.toString()
+        }
 
         if (this.form.tpl.surge.doh === true) {
           this.customSubUrl += "&surge.doh=true";
@@ -636,16 +650,16 @@ export default {
       if (ls !== null) {
         let data = JSON.parse(ls)
         if (data.expire > now) {
-          itemValue = data.value 
+          itemValue = data.value
         } else {
           localStorage.removeItem(itemKey)
         }
       }
 
-      return itemValue 
+      return itemValue
     },
     setLocalStorageItem(itemKey, itemValue) {
-      const ttl = process.env.VUE_APP_CACHE_TTL 
+      const ttl = process.env.VUE_APP_CACHE_TTL
       const now = +new Date()
 
       let data = {
