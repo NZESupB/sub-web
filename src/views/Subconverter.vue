@@ -270,15 +270,13 @@ export default {
           V2Ray: "v2ray",
         },
         customBackend: {
-          "NXWow的后端": "https://sub.nxnow.cf/sub?",
-          "也许可以转薯条的后端1": "https://hksub.nxnow.xyz/sub?",
+          "NXWow的后端": "https://api.nxnow.cf/sub?",
           "品云和薯条PY的后端1": "https://sub.id9.cc/sub?",
           "品云和薯条PY的后端2": "https://sub.sub.cm/sub?",
           "品云和薯条PY的后端3": "https://sub.lpy.pw/sub?",
 	},
         backendOptions: [
-          { value: "https://sub.nxnow.cf/sub?" },
-          { value: "https://hksub.nxnow.xyz/sub?" },
+          { value: "https://api.nxnow.cf/sub?" },
           { value: "https://sub.id9.cc/sub?" },
           { value: "https://sub.sub.cm/sub?" },
           { value: "https://sub.lpy.pw/sub?" },
@@ -306,11 +304,6 @@ export default {
                 label: "SimonGino",
                 value:
                   "https://raw.githubusercontent.com/SimonGino/SubConver-Clash-Profile/master/outpref.ini"
-              },
-              {
-                label: "神仙HY的套娃配置",
-                value:
-                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/ljhy.ini"
               }
             ]
           }
