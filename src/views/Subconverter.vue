@@ -270,10 +270,10 @@ export default {
           V2Ray: "v2ray",
         },
         customBackend: {
-          "NXWow的后端": "https://api.nxnow.cf/sub?",
-          "品云和薯条PY的后端1": "https://sub.id9.cc/sub?",
-          "品云和薯条PY的后端2": "https://sub.sub.cm/sub?",
-          "品云和薯条PY的后端3": "https://sub.lpy.pw/sub?",
+          "默认后端": "https://api.nxnow.cf/sub?",
+          "品云后端1": "https://sub.id9.cc/sub?",
+          "品云后端2": "https://sub.sub.cm/sub?",
+          "品云后端3": "https://sub.lpy.pw/sub?",
 	},
         backendOptions: [
           { value: "https://api.nxnow.cf/sub?" },
