@@ -385,7 +385,7 @@ export default {
   },
   mounted() {
     this.form.clientType = "clash";
-    this.form.customBackend = "https://sub.nxnow.cf/sub?";
+    this.form.customBackend = "https://api.nxnow.cf/sub?";
     this.form.remoteConfig = "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outpref.ini";
     this.getBackendVersion();
   },
