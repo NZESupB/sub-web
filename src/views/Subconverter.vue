@@ -288,22 +288,17 @@ export default {
               {
                 label: "DefaultNXOutPref",
                 value:
-                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outpref.ini"
+                  "https://raw.githubusercontent.com/NZESupB/Profile/main/outpref/outpref.ini"
               },
               {
                 label: "auto",
                 value:
-                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/auto.ini"
+                  "https://raw.githubusercontent.com/NZESupB/Profile/main/outpref/auto.ini"
               },
               {
                 label: "ProviderPref",
                 value:
-                  "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outprovide.ini"
-              },
-              {
-                label: "SimonGino",
-                value:
-                  "https://raw.githubusercontent.com/SimonGino/SubConver-Clash-Profile/master/outpref.ini"
+                  "https://raw.githubusercontent.com/NZESupB/Profile/main/outpref/outprovide.ini"
               }
             ]
           }
