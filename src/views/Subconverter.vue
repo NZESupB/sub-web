@@ -286,7 +286,7 @@ export default {
             label: "个人配置",
             options: [
               {
-                label: "DefaultNXOutPref",
+                label: "DefaultOutPref",
                 value:
                   "https://raw.githubusercontent.com/NZESupB/Profile/main/outpref/outpref.ini"
               },
@@ -370,7 +370,7 @@ export default {
   },
   created() {
     // document.title = "Subscription Converter";
-    document.title = "在线订阅转换";
+    document.title = "NZE订阅转换";
      this.isPC = this.$getOS().isPc;
 
     // 获取 url cache
@@ -381,7 +381,7 @@ export default {
   mounted() {
     this.form.clientType = "clash";
     this.form.customBackend = "https://api.nxnow.cf/sub?";
-    this.form.remoteConfig = "https://raw.githubusercontent.com/NZESupB/SubConver-Clash-Profile/master/outpref.ini";
+    this.form.remoteConfig = "https://raw.githubusercontent.com/NZESupB/Profile/main/outpref/outpref.ini";
     this.getBackendVersion();
   },
   methods: {
@@ -441,20 +441,6 @@ export default {
 
       let sourceSub = this.form.sourceSubUrl;
       sourceSub = sourceSub.replace(/(\n|\r|\n\r)/g, "|");
-
-      // 薯条屏蔽
-      if (sourceSub.indexOf("losadhwse") !== -1 && (backend.indexOf("py6.pw") !== -1 || backend.indexOf("subconverter-web.now.sh") !== -1 || backend.indexOf("subconverter.herokuapp.com") !== -1 || backend.indexOf("api.wcc.best") !== -1)) {
-        this.$alert('此机场订阅已将该后端屏蔽，请自建后端转换。', '转换错误提示', {
-          confirmButtonText: '确定',
-          callback: action => {
-            this.$message({
-              type: 'error',
-              message: `action: ${ action }`
-            });
-          }
-        });
-        return false;
-      }
 
       this.customSubUrl =
         backend +
